@@ -3,97 +3,165 @@ body {
     margin: 0px;
 }
 
-.hero-image {
-    width: 931px;
-    height: 1074px;
-    top: 0px;
-    float: right;
+@media only screen and (max-width: 1800px) {
+    h1.hero-title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+        line-height: 101px;
+
+        color: #332E29;
+    }
+
+    h2.hero-subtitle {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 101.3%;
+        text-align: center;
+
+        /* identical to box height, or 81px */
+        text-transform: uppercase;
+
+        color: rgba(51, 46, 41, 0.65);
+    }
+
+    p.hero-copy {
+        display: none
+    }
+
+    .view-portfolio {
+        position: absolute;
+        left: 2em;
+        bottom: 2em;
+        width: 268px;
+        height: 71px;
+
+        background: #948B7E;
+
+        margin: 0px;
+        padding: 0px;
+
+        border: none;
+
+        font-family: Source Serif Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 101.3%;
+
+        /* or 36px */
+
+        color: #F9EFDB;
+    }
+
+    .view-portfolio:hover {
+        cursor: pointer;
+    }
+
+    .hero-image {
+        width: 100%;
+        top: 0px;
+        float: right;
+    }
 }
 
-h1.hero-title {
-    position: absolute;
-    width: 725px;
-    height: 204px;
-    left: 147px;
-    top: 147px;
-    margin: 0px;
-    padding: 0px;
+@media only screen and (min-width: 1800px) {
+    h1.hero-title {
+        position: absolute;
+        width: 725px;
+        height: 204px;
+        left: 147px;
+        top: 147px;
+        margin: 0px;
+        padding: 0px;
 
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 101px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 101px;
 
-    color: #332E29;
-}
+        color: #332E29;
+    }
 
-h2.hero-subtitle {
-    position: absolute;
-    width: 360px;
-    height: 81px;
-    left: 147px;
-    top: 401px;
-    margin: 0px;
-    padding: 0px;
+    h2.hero-subtitle {
+        position: absolute;
+        width: 360px;
+        height: 81px;
+        left: 147px;
+        top: 401px;
+        margin: 0px;
+        padding: 0px;
 
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 101.3%;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 101.3%;
 
-    /* identical to box height, or 81px */
-    text-transform: uppercase;
+        /* identical to box height, or 81px */
+        text-transform: uppercase;
 
-    color: rgba(51, 46, 41, 0.65);
-}
+        color: rgba(51, 46, 41, 0.65);
+    }
 
-p.hero-copy {
-    position: absolute;
-    width: 694px;
-    height: 276px;
-    left: 147px;
-    top: 552px;
-    margin: 0px;
-    padding: 0px;
+    p.hero-copy {
+        position: absolute;
+        width: 694px;
+        height: 276px;
+        left: 147px;
+        top: 552px;
+        margin: 0px;
+        padding: 0px;
 
-    font-family: Source Serif Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 154.3%;
+        font-family: Source Serif Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 154.3%;
 
-    /* or 46px */
+        /* or 46px */
 
-    color: rgba(51, 46, 41, 0.85);
-}
+        color: rgba(51, 46, 41, 0.85);
+    }
 
-.view-portfolio {
-    position: absolute;
-    width: 268px;
-    height: 71px;
-    left: 147px;
-    top: 866px;
+    .view-portfolio {
+        position: absolute;
+        width: 268px;
+        height: 71px;
+        left: 147px;
+        top: 866px;
 
-    background: #948B7E;
+        background: #948B7E;
 
-    margin: 0px;
-    padding: 0px;
+        margin: 0px;
+        padding: 0px;
 
-    border: none;
+        border: none;
 
-    font-family: Source Serif Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 101.3%;
+        font-family: Source Serif Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 101.3%;
 
-    /* or 36px */
+        /* or 36px */
 
-    color: #F9EFDB;
-}
+        color: #F9EFDB;
+    }
 
-.view-portfolio:hover {
-    cursor: pointer;
+    .view-portfolio:hover {
+        cursor: pointer;
+    }
+
+    .hero-image {
+        width: 931px;
+        height: 1074px;
+        top: 0px;
+        float: right;
+    }
 }
