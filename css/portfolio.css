@@ -28,7 +28,7 @@ h1.title {
     grid-template-rows: repeat(2, 500px);
     grid-gap: 70px;
 
-    margin-top: 173px;
+    margin-top: 65px;
     width: 1564px;
     margin-left: auto;
     margin-right: auto;
@@ -36,9 +36,22 @@ h1.title {
 }
 
 .portfolio-item {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
+    background-color: #D4CEC5;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 1.5em;
+}
+
+.portfolio-item h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 101.3%;
+
+    /* identical to box height, or 41px */
+    text-transform: uppercase;
+
+    color: #332E29;
 }
