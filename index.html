@@ -16,5 +16,15 @@
             Painted Media.
         </p>
         <img class="hero-image" src="img/Self-Portrait.png" alt="Nick is depicted, standing in front of his self portrait." />
+        <button class="view-portfolio animate__animated animate__fadeIn animate__delay-1s">View Portfolio</button>
+        <script>
+         document.querySelector('.view-portfolio')
+                 .addEventListener(
+                     'click',
+                     function() {
+                         window.location.href="./portfolio.html";
+                     }
+                 );
+        </script>
     </body>
 </html>

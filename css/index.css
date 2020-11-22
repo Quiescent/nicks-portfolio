@@ -12,32 +12,46 @@
          url('../fonts/source-serif-pro-v10-latin-regular.svg#SourceSerifPro') format('svg'); /* Legacy iOS */
 }
 
+/* source-serif-pro-700 - latin */
+@font-face {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/source-serif-pro-v10-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/source-serif-pro-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/source-serif-pro-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/source-serif-pro-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/source-serif-pro-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/source-serif-pro-v10-latin-700.svg#SourceSerifPro') format('svg'); /* Legacy iOS */
+}
+
 /* playfair-display-regular - latin */
 @font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
 }
 
 /* playfair-display-700 - latin */
 @font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/playfair-display-v21-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/playfair-display-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/playfair-display-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/playfair-display-v21-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/playfair-display-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/playfair-display-v21-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/playfair-display-v21-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v21-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -109,4 +123,33 @@ p.hero-copy {
     /* or 46px */
 
     color: rgba(51, 46, 41, 0.85);
+}
+
+.view-portfolio {
+    position: absolute;
+    width: 268px;
+    height: 71px;
+    left: 147px;
+    top: 866px;
+
+    background: #948B7E;
+
+    margin: 0px;
+    padding: 0px;
+
+    border: none;
+
+    font-family: Source Serif Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 101.3%;
+
+    /* or 36px */
+
+    color: #F9EFDB;
+}
+
+.view-portfolio:hover {
+    cursor: pointer;
 }
