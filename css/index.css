@@ -14,20 +14,35 @@
 
 /* playfair-display-regular - latin */
 @font-face {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/playfair-display-v21-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/playfair-display-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display-v21-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
 }
 
 body {
     background: #C7BBA9;
+    margin: 0px;
 }
 
 .hero-image {
@@ -42,7 +57,9 @@ h1.hero-title {
     width: 725px;
     height: 204px;
     left: 147px;
-    top: 125px;
+    top: 147px;
+    margin: 0px;
+    padding: 0px;
 
     font-family: Playfair Display;
     font-style: normal;
@@ -58,7 +75,9 @@ h2.hero-subtitle {
     width: 360px;
     height: 81px;
     left: 147px;
-    top: 379px;
+    top: 401px;
+    margin: 0px;
+    padding: 0px;
 
     font-family: Playfair Display;
     font-style: normal;
@@ -77,7 +96,9 @@ p.hero-copy {
     width: 694px;
     height: 276px;
     left: 147px;
-    top: 510px;
+    top: 552px;
+    margin: 0px;
+    padding: 0px;
 
     font-family: Source Serif Pro;
     font-style: normal;
