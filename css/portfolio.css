@@ -1,3 +1,44 @@
 body {
     background: #332E29;
 }
+
+h1.title {
+    width: 1564px;
+    height: 120px;
+
+    margin: 50px auto 0px auto;
+    padding: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 120px;
+    line-height: 101.3%;
+
+    /* or 122px */
+    letter-spacing: 0.965em;
+    text-transform: uppercase;
+
+    color: #F9EFDB;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    grid-gap: 70px;
+
+    margin-top: 173px;
+    width: 1564px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.portfolio-item {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
