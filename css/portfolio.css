@@ -6,7 +6,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
     h1.title {
         width: 100%;
         height: 120px;
@@ -29,7 +29,7 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
     h1.title {
         width: 1564px;
         height: 120px;
@@ -51,11 +51,11 @@ body {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1100px) {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 690px);
+        grid-template-rows: repeat(4, 700px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -65,7 +65,49 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1100px) {
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 850px);
+        grid-gap: 70px;
+
+        margin-top: 65px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 850px);
+        grid-gap: 70px;
+
+        margin-top: 65px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 850px);
+        grid-gap: 70px;
+
+        margin-top: 65px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1600px) {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -120,14 +162,10 @@ body {
     display: inline-flex;
 }
 
-@media (max-width: 1440px) {
-    .portfolio-item-tall {
-        height: 1800px;
-    }
-
-
+@media (max-width: 1100px) {
     .portfolio-item-tall {
         height: 1100px;
+        grid-row: 4 / 5;
     }
 
     .portfolio-item-tall .portfolio-artwork-container {
@@ -135,12 +173,18 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1100px) {
     .portfolio-item-tall {
-        height: 1800px;
+        height: 1300px;
+        grid-row: 4 / 5;
     }
 
+    .portfolio-item-tall .portfolio-artwork-container {
+        height: 1300px;
+    }
+}
 
+@media (min-width: 1600px) {
     .portfolio-item-tall {
         grid-row: 2 / 2;
         grid-column: 2 / 2;
@@ -151,3 +195,4 @@ body {
         height: 930px;
     }
 }
+.
