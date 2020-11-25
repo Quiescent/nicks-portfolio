@@ -55,7 +55,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(100, 100px);
+        grid-template-rows: repeat(70, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -69,7 +69,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(100, 100px);
+        grid-template-rows: repeat(70, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -83,7 +83,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(100, 100px);
+        grid-template-rows: repeat(70, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -97,7 +97,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(100, 100px);
+        grid-template-rows: repeat(70, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -111,7 +111,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(100, 100px);
+        grid-template-rows: repeat(35, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
