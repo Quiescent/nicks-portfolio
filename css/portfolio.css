@@ -55,7 +55,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 700px);
+        grid-template-rows: repeat(100, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -69,7 +69,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 850px);
+        grid-template-rows: repeat(100, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -83,7 +83,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 850px);
+        grid-template-rows: repeat(100, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -97,7 +97,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 850px);
+        grid-template-rows: repeat(100, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -111,7 +111,7 @@ body {
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 630px);
+        grid-template-rows: repeat(100, 100px);
         grid-gap: 70px;
 
         margin-top: 65px;
@@ -122,10 +122,41 @@ body {
 }
 
 .portfolio-item {
+    grid-row-end: span 4;
     background-color: #D4CEC5;
     font-size: 1.5em;
     padding-top: 1.5em;
     text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .portfolio-item {
+        grid-row-end: span 5;
+    }
+}
+
+@media (min-width: 1100px) {
+    .portfolio-item {
+        grid-row-end: span 6;
+    }
+}
+
+@media (min-width: 1300px) {
+    .portfolio-item {
+        grid-row-end: span 5;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portfolio-item {
+        grid-row-end: span 6;
+    }
+}
+
+@media (min-width: 1600px) {
+    .portfolio-item {
+        grid-row-end: span 4;
+    }
 }
 
 .portfolio-item h2 {
@@ -162,21 +193,25 @@ body {
     display: inline-flex;
 }
 
+.portfolio-item-tall {
+    grid-row-end: span 6;
+}
+
 @media (max-width: 1100px) {
     .portfolio-item-tall {
-        height: 1100px;
-        grid-row: 4 / 5;
+        height: 1200px;
+        grid-row-end: span 8;
     }
 
     .portfolio-item-tall .portfolio-artwork-container {
-        height: 1100px;
+        height: 1200px;
     }
 }
 
 @media (min-width: 1100px) {
     .portfolio-item-tall {
         height: 1300px;
-        grid-row: 4 / 5;
+        grid-row-end: span 9;
     }
 
     .portfolio-item-tall .portfolio-artwork-container {
@@ -186,8 +221,7 @@ body {
 
 @media (min-width: 1600px) {
     .portfolio-item-tall {
-        grid-row: 2 / 2;
-        grid-column: 2 / 2;
+        grid-row-end: span 6;
         height: 930px;
     }
 
@@ -195,4 +229,3 @@ body {
         height: 930px;
     }
 }
-.
