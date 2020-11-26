@@ -1,0 +1,6 @@
+((json-mode . ((js-indent-level . 2)
+               (create-lockfiles . nil)))
+ (js2-mode . ((js-indent-level . 2)
+              (create-lockfiles . nil)))
+ (web-mode . ((js-indent-level . 2)
+                (create-lockfiles . nil))))
