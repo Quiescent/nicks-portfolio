@@ -67,3 +67,9 @@ body {
 
     color: #332E29;
 }
+
+.portfolio-item {
+    background-color: #D4CEC5;
+    padding-top: 1.5em;
+    text-align: center;
+}
