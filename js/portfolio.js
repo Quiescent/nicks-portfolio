@@ -39,19 +39,29 @@ var createPortfolio = function (root, photoConfigURL) {
 
   var styleGrid = function () {
     var totalHeight = totalPhotoHeight();
-    // TODO handle different widths
     var screenWidth = window.innerWidth;
     var columns = screenWidth < 1600 ? 1 : 2;
     var rowCount = Math.ceil(totalHeight / ROW_HEIGHT);
     portfolioArea.style.gridTemplateColumns = 'repeat(' + columns + ', 1fr)';
     portfolioArea.style.gridTemplateRows = 'repeat(' + rowCount + ', ' + ROW_HEIGHT + 'px)';
     portfolioArea.style.gridGap = ROW_GUTTER + 'px';
+    var lastEnding = 1;
+    var rowStart = 1;
     document
       .querySelectorAll('.portfolio-item')
-      .forEach(function (item) {
+      .forEach(function (item, index) {
+        if (index % columns === 0) {
+          rowStart = lastEnding;
+        }
         var image = item.querySelector('img');
         var imageHeight = parseInt(window.getComputedStyle(image).height);
-        var rowsForItem = ARTWORK_PADDING + Math.ceil(imageHeight / (ROW_HEIGHT + ROW_GUTTER));
+        var title = item.querySelector('h2');
+        var titleHeight = parseInt(window.getComputedStyle(title).height);
+        var rowsForItem = ARTWORK_PADDING + Math.ceil((imageHeight + titleHeight) / (ROW_HEIGHT + ROW_GUTTER));
+        if (rowsForItem + rowStart > lastEnding) {
+          lastEnding = rowsForItem + rowStart;
+        }
+        item.style.gridRowStart = rowStart + '';
         item.style.gridRowEnd = 'span ' + rowsForItem;
       });
   };
@@ -85,11 +95,12 @@ var createPortfolio = function (root, photoConfigURL) {
     }).then(render);
   };
 
-  window.addEventListener('resize', styleGrid);
+  window.addEventListener('resize', fetchAndRender);
 
   fetchAndRender();
 
   return {
-    fetchAndRender: fetchAndRender
+    fetchAndRender: fetchAndRender,
+    styleGrid: styleGrid
   };
 };

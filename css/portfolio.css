@@ -64,6 +64,9 @@ body {
         line-height: 101.3%;
         margin: 0px;
 
+        padding-top: 1em;
+        padding-bottom: 1em;
+
         text-align: center;
 
         width: 100%;
@@ -83,6 +86,9 @@ body {
         line-height: 101.3%;
         margin: 0px;
 
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+
         text-align: center;
 
         width: 100%;
@@ -94,10 +100,6 @@ body {
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #D4CEC5;
     text-align: center;
 }
@@ -110,7 +112,7 @@ body {
     .portfolio-items {
         display: grid;
         width: 90%;
-        margin-top: 4em;
+        margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
     }
