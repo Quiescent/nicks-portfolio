@@ -1,67 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <title>Nicholas Steere</title>
         <link rel="stylesheet" href="./css/fonts.css" />
         <link rel="stylesheet" href="./css/portfolio.css" />
+        <script src="./js/portfolio.js"></script>
     </head>
     <body>
-        <h1 class="title">portfolio</h1>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <h2 class="portfolio-item-title">Draakensberg</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/drakensburg.png" alt="A mountain pass in the Drakensburg" />
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <h2 class="portfolio-item-title">Forest</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/forest.png" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item portfolio-item-tall">
-                <h2 class="portfolio-item-title">Tree</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/highlight-tree.png" alt="A magnificent tree" />
-                </div>
-            </div>
-            <div class="portfolio-item portfolio-item-tall">
-                <h2 class="portfolio-item-title">Wind Pump</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/wind-pump.jpg" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <h2 class="portfolio-item-title">Champagne Castle</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/champagne-castle.jpg" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <h2 class="portfolio-item-title">Rolling Hills</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/rolling-hills.jpg" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item portfolio-item-tall">
-                <h2 class="portfolio-item-title">Weaver One</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/weaver-1.jpg" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item portfolio-item-tall">
-                <h2 class="portfolio-item-title">Weaver Two</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/weaver-2.jpg" alt="A forest scene" />
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <h2 class="portfolio-item-title">Forest Lane</h2>
-                <div class="portfolio-artwork-container">
-                    <img class="portfolio-artwork" src="img/yellow-driveway.png" alt="A forest scene" />
-                </div>
-            </div>
-        </div>
+        <h1 class="title">
+            <span>p</span>
+            <span>o</span>
+            <span>r</span>
+            <span>t</span>
+            <span>f</span>
+            <span>o</span>
+            <span>l</span>
+            <span>i</span>
+            <span>o</span>
+        </h1>
+        <div id="portfolio-items" class="portfolio-items" />
+        <script>
+         var portfolio = createPortfolio('#portfolio-items', './photos.json');
+        </script>
     </body>
 </html>
