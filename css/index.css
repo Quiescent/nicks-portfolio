@@ -34,7 +34,7 @@ body {
     }
 
     .view-portfolio {
-        position: absolute;
+        position: fixed;
         left: 2em;
         bottom: 2em;
         width: 268px;
