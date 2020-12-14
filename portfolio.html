@@ -5,8 +5,10 @@
         <meta content="utf-8" http-equiv="encoding">
         <title>Nicholas Steere</title>
         <link rel="stylesheet" href="./css/fonts.css" />
+        <link rel="stylesheet" href="./css/menu.css" />
         <link rel="stylesheet" href="./css/portfolio.css" />
         <script src="./js/portfolio.js"></script>
+        <script src="./js/menu.js"></script>
     </head>
     <body>
         <h1 class="title">
@@ -20,9 +22,15 @@
             <span>i</span>
             <span>o</span>
         </h1>
-        <div id="portfolio-items" class="portfolio-items" />
+        <div id="portfolio-items" class="portfolio-items"></div>
+        <div id="menu" class="menu">
+            <span id="menu-collapsed" class="menu-collapsed"></span>
+            <a href="/" id="home" class="menu-item">← Home</a>
+            <a href="/bio.html" id="bio" class="menu-item">Bio →</a>
+        </div>
         <script>
          var portfolio = createPortfolio('#portfolio-items', './photos.json');
+         var menu = createMenu('#menu');
         </script>
     </body>
 </html>

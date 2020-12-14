@@ -1,0 +1,60 @@
+.menu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 55px;
+    right: 5%;
+    bottom: 5%;
+    padding-left: 0.5em;
+
+    z-index: 4;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+
+    filter: drop-shadow(2px 2px 2px #000);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+
+    color: #D4CEC5;
+
+    background: #332E29;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu-collapsed {
+    position: relative;
+    top: -15px;
+}
+
+.menu-collapsed:after{
+  content: '•••';
+  position: relative;
+  top: 20%;
+  left: 20%;
+  font-size: 27px;
+  letter-spacing: 4px;
+}
+
+.menu-item {
+    display: none
+}
+
+.menu-item:hover {
+    font-weight: bold;
+}
+
+a.menu-item {
+    text-decoration: none;
+    color: #D4CEC5;
+}

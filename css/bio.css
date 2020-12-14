@@ -1,0 +1,98 @@
+body {
+    z-index: 0;
+    marin: 0px;
+    padding: 0px;
+    background: #FFF;
+}
+
+.text {
+    position: relative;
+    z-index: 4;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 72px;
+    padding: 0;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 217px;
+    line-height: 101.3%;
+
+    /* or 220px */
+    font-variant: small-caps;
+
+    color: #73402C;
+}
+
+.floating-box {
+    position: absolute;
+    width: 44%;
+    left: 100px;
+    top: 113px;
+}
+
+p {
+    font-family: Source Serif Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 243.3%;
+
+    /* or 73px */
+
+    color: rgba(51, 46, 41);
+}
+
+@media only screen and (max-width: 1600px) {
+    .nick {
+        position: fixed;
+        width: 950px;
+        height: 800px;
+        left: 52%;
+        bottom: 0px;
+        z-index: 3;
+
+        background: url(../img/horse.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .nick {
+        position: fixed;
+        width: 1105px;
+        height: 850px;
+        left: 52%;
+        bottom: 50px;
+        z-index: 3;
+
+        background: url(../img/horse.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.ground {
+    z-index: 2;
+    position: fixed;
+    bottom: -950px;
+    left: -500px;
+    width: 3000px;
+    height: 1000px;
+    background: rgba(190, 176, 149);
+    transform: rotate(-10deg) skewX(0deg);
+}
+
+.grass {
+    z-index: 1;
+    position: fixed;
+    bottom: -850px;
+    left: -500px;
+    width: 3000px;
+    height: 1000px;
+    background: #8fa55550;
+    transform: rotate(-5deg) skewX(0deg);
+}
