@@ -46,16 +46,33 @@ p {
     color: rgba(51, 46, 41);
 }
 
-.nick {
-    position: fixed;
-    width: 1105px;
-    height: 850px;
-    left: 52%;
-    bottom: 50px;
-    z-index: 3;
+@media only screen and (max-width: 1600px) {
+    .nick {
+        position: fixed;
+        width: 950px;
+        height: 800px;
+        left: 52%;
+        bottom: 0px;
+        z-index: 3;
 
-    background: url(../img/horse.png);
-    background-repeat: no-repeat;
+        background: url(../img/horse.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .nick {
+        position: fixed;
+        width: 1105px;
+        height: 850px;
+        left: 52%;
+        bottom: 50px;
+        z-index: 3;
+
+        background: url(../img/horse.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .ground {
