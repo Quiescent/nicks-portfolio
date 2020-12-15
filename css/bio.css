@@ -39,14 +39,38 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 243.3%;
+    line-height: 190%;
 
     /* or 73px */
 
     color: rgba(51, 46, 41);
 }
 
-@media only screen and (max-width: 1600px) {
+@media (min-width: 800px) and (max-width: 1300px) {
+    .nick {
+        position: fixed;
+        width: 950px;
+        height: 400px;
+        left: 10%;
+        bottom: 0px;
+        z-index: 3;
+
+        background: url(../img/horse.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .floating-box {
+        width: 80%;
+        overflow: scroll;
+    }
+
+    .text {
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
     .nick {
         position: fixed;
         width: 950px;
@@ -72,6 +96,30 @@ p {
 
         background: url(../img/horse.png);
         background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 750px) {
+    .nick {
+        position: fixed;
+        width: 950px;
+        height: 600px;
+        left: 10%;
+        bottom: 0px;
+        z-index: 3;
+
+        background: url(../img/horse.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .floating-box {
+        width: 80%;
+        overflow: scroll;
+    }
+
+    .text {
+        height: 60vh;
     }
 }
 
